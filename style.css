@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+  font-family: 'Clarendon';
+  src: url("/assets/police/Clarendon.ttf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-pinky: #ff69b4;
+  --color-icecream: #FCD0E1;
+  --color-mimosa: #FFD21F;
+}
+
+@keyframes textWave {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.animate-text-blink {
+  background: linear-gradient(
+    90deg, 
+    var(--color-pinky) 0%, 
+    var(--color-icecream) 50%, 
+    var(--color-pinky) 100%
+  );
+
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: textWave 3s linear infinite;
+}
+
+.font-playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.font-clarendon {
+  font-family: "Clarendon", serif;
+}
+
+.font-robotomono {
+  font-family: "Roboto Mono", monospace;
+}
+
+.bg-mimosa {
+  background-color: #FFD21F;
+}
+
+.text-mimosa {
+  color: #FFD21F;
+}
+
+.bg-vintage {
+  background-color: #FC7922;
+}
+
+.text-vintage {
+  color: #FC7922;
+}
+
+.bg-feuillage {
+  background-color: #73A063;
+}
+
+.text-feuillage {
+  color: #73A063;
+}
+
+.bg-avoine {
+  background-color: #F0ECDC;
+}
+
+.text-avoine {
+  color: #F0ECDC;
+}
+
+.bg-matchalatte {
+  background-color: #AED399;
+}
+
+.text-matchalatte {
+  color: #AED399;
+}
+
+.bg-icecream {
+  background-color: #FCD0E1;
+}
+
+.text-icecream {
+  color: #FCD0E1;
+}
